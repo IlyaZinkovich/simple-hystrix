@@ -18,6 +18,6 @@ class ClientApp {
 
   private Response defaultResponse(final Throwable error) {
     error.printStackTrace();
-    return () -> true;
+    return new DefaultResponse();
   }
 }
